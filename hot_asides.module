@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * hot_tables.module
+ */
+
+
+
+
+/**
+ * Implementation of hook_entity_info_alter()
+ */
+function hot_buttons_entity_info_alter(&$entity_info){
+  // Basic table
+  $entity_info['fieldable_panels_pane']['bundles']['hot_asides'] = array(
+    'label' => t('Aside'),
+    'pane category' => t('HotWidgets!'),
+    'pane top level' => FALSE,
+    'pane icon' => HOT_BUTTONS_PATH . '/images/icon_button.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/hot-asides',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
