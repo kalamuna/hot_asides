@@ -164,21 +164,30 @@ function hot_asides_defaultconfig_user_default_permissions() {
   // Exported permission: 'create fieldable hot_asides'.
   $permissions['create fieldable hot_asides'] = array(
     'name' => 'create fieldable hot_asides',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete fieldable hot_asides'.
   $permissions['delete fieldable hot_asides'] = array(
     'name' => 'delete fieldable hot_asides',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit fieldable hot_asides'.
   $permissions['edit fieldable hot_asides'] = array(
     'name' => 'edit fieldable hot_asides',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'developer' => 'developer',
+    ),
     'module' => 'fieldable_panels_panes',
   );
 
