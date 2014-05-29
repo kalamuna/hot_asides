@@ -16,7 +16,7 @@ function hot_asides_entity_info_alter(&$entity_info){
     'label' => t('Aside'),
     'pane category' => t('HotWidgets!'),
     'pane top level' => FALSE,
-    'pane icon' => HOT_BUTTONS_PATH . '/images/icon_button.png',
+    'pane icon' => FALSE,
     'admin' => array(
       'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
       'bundle argument' => 4,

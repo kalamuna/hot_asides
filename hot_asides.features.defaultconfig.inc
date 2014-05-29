@@ -69,7 +69,7 @@ function hot_asides_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'fieldable_panels_pane',
       'field_name' => 'field_basic_url',
-      'label' => 'URL',
+      'label' => 'Link',
       'required' => 0,
       'settings' => array(
         'attributes' => array(
@@ -89,7 +89,7 @@ function hot_asides_defaultconfig_field_default_fields() {
         ),
         'rel_remove' => 'default',
         'title' => 'required',
-        'title_maxlength' => 128,
+        'title_maxlength' => 255,
         'title_value' => '',
         'url' => 'optional',
         'user_register_form' => FALSE,
@@ -107,7 +107,7 @@ function hot_asides_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('URL');
+  t('Link');
 
   return $fields;
 }
