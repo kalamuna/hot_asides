@@ -49,7 +49,7 @@ function hot_asides_field_default_field_instances() {
       'title' => 'required',
       'title_maxlength' => 255,
       'title_value' => '',
-      'url' => 'optional',
+      'url' => 'required',
       'user_register_form' => FALSE,
       'validate_url' => 1,
     ),
