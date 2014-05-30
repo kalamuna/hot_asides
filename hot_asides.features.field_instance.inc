@@ -10,30 +10,30 @@
 function hot_asides_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'fieldable_panels_pane-hot_asides-field_basic_url'
-  $field_instances['fieldable_panels_pane-hot_asides-field_basic_url'] = array(
+  // Exported field_instance: 'fieldable_panels_pane-hot_asides-field_hot_aside_link'
+  $field_instances['fieldable_panels_pane-hot_asides-field_hot_aside_link'] = array(
     'bundle' => 'hot_asides',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_basic_url',
+    'field_name' => 'field_hot_aside_link',
     'label' => 'Link',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'attributes' => array(
         'class' => '',
-        'configurable_title' => 0,
-        'rel' => '',
+        'configurable_title' => 1,
+        'rel' => 'nofollow',
         'target' => 'default',
         'title' => '',
       ),
@@ -45,11 +45,11 @@ function hot_asides_field_default_field_instances() {
         'enable' => 1,
         'insert_plugin' => 'raw_url',
       ),
-      'rel_remove' => 'default',
-      'title' => 'required',
+      'rel_remove' => 'rel_remove_internal',
+      'title' => 'optional',
       'title_maxlength' => 255,
       'title_value' => '',
-      'url' => 'required',
+      'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,
     ),
@@ -58,7 +58,7 @@ function hot_asides_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => -3,
+      'weight' => -2,
     ),
   );
 
