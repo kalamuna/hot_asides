@@ -34,7 +34,7 @@ function hot_asides_entity_info_alter(&$entity_info){
 
  function hot_asides_theme($existing, $type, $theme, $path){
    return array(
-     'field__field_basic_url__hot_asides' => array(
+     'field__field_hot_aside_link__hot_asides' => array(
         'function' => 'theme_field__field_basic_url__hot_asides'
      )
    );
@@ -42,7 +42,7 @@ function hot_asides_entity_info_alter(&$entity_info){
  /**
   * Theme callback for the field
   */
- function theme_field__field_basic_url__hot_asides(&$variables){
+ function theme_field__field_hot_aside_link___hot_asides(&$variables){
    $output = '';
 
 
